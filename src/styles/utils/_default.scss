@@ -1,0 +1,105 @@
+.first-title {
+  color: var(--black-3, #1d2122);
+  font-family: Roboto Condensed;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 107%; /* 55.64px */
+  letter-spacing: 1.04px;
+  text-transform: uppercase;
+}
+
+.second-title {
+  color: var(--yellow-5, #ffaa17);
+  font-family: Roboto Condensed;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.76px;
+  text-transform: uppercase;
+}
+
+.description {
+  color: var(--black-3, #1d2122);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 180% */
+}
+
+.list-title {
+  color: var(--black-3, #1d2122);
+  font-family: Roboto Condensed;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  transition: color 250ms linear;
+}
+
+.list-description {
+  color: var(--black-2, #7e7e7e);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px; /* 180% */
+}
+
+.first-button {
+  padding: 18px 32px;
+  border: 1px solid transparent;
+  background: var(--yellow-5, #ffaa17);
+  overflow: hidden;
+  color: var(--black-3, #1d2122);
+  text-align: center;
+  text-overflow: ellipsis;
+
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+
+  transition: background 250ms linear;
+  transition-property: color, background;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    background: var(--black-3, #1d2122);
+  }
+}
+
+.second-button {
+  padding: 18px 32px;
+  background: transparent;
+  border: 1px solid var(--black-3, #1d2122);
+  overflow: hidden;
+  color: var(--black-3, #1d2122);
+  text-align: center;
+  text-overflow: ellipsis;
+
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+
+  transition: background 250ms linear;
+  transition-property: color, background;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    background: var(--black-3, #1d2122);
+  }
+}

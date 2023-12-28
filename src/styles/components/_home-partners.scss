@@ -1,0 +1,38 @@
+.partners {
+  padding: 120px 0;
+
+  &-second {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &-title {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &-description {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    &-image {
+      width: 193px;
+    }
+
+    &-description {
+      text-align: center;
+    }
+  }
+}

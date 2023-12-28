@@ -1,0 +1,27 @@
+.feedback-slider {
+  padding: 120px 0;
+
+  &-item {
+    display: flex;
+    gap: 40px;
+
+    &-image {
+      width: 500px;
+
+      &-img {
+        min-width: 450px;
+        min-height: 500px;
+
+        background: var(--gray-2, #e4e4e7);
+      }
+    }
+
+    &-name {
+      margin-bottom: 12px;
+    }
+
+    &-service {
+      margin-bottom: 32px;
+    }
+  }
+}
