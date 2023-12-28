@@ -8,6 +8,9 @@ import Advantages from "../components/pages/home/Advantages";
 import Stats from "../components/pages/home/Stats";
 import Banner from "../components/pages/home/Banner";
 import FeedbackSlider from "../components/pages/home/FeedbackSlider";
+import Feedback from "../components/pages/home/Feedback";
+import News from "../components/pages/home/News";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -21,6 +24,9 @@ const Home = () => {
       <Stats />
       <Banner />
       <FeedbackSlider />
+      <Feedback />
+      <News />
+      <Footer />
     </>
   );
 };
