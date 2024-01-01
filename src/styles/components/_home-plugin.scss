@@ -1,13 +1,65 @@
 .plugin {
   padding-top: 120px;
+
+  position: relative;
+
+  @media screen and (max-width: 1200px) {
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (max-width: 511px) {
+    padding-top: 60px;
+  }
+
+  &:hover &-prev {
+    opacity: 1;
+  }
+
+  &:hover &-next {
+    opacity: 1;
+  }
 }
 
 .plugin-block {
   display: flex;
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+  }
 }
 
 .plugin-image {
   position: relative;
+  width: 50%;
+  @media screen and (max-width: 992px) {
+    width: calc(100% - 108px);
+
+    &-img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  &-hidden {
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+  }
 
   &-decor {
     position: absolute;
@@ -22,6 +74,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+      top: unset;
+      left: unset;
+      bottom: 0;
+      right: 54px;
+      transform: translateY(50%);
+    }
 
     &-title {
       color: var(--black-3, #1d2122);
@@ -48,6 +108,18 @@
   margin-left: 150px;
   max-width: 527px;
 
+  @media screen and (max-width: 1200px) {
+    margin-left: 84px;
+    width: 60%;
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 100%;
+    max-width: unset;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
   &-second {
     margin-bottom: 16px;
   }
@@ -67,5 +139,52 @@
   &-buttons {
     display: flex;
     gap: 24px;
+  }
+}
+
+.plugin-prev {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 65px;
+  background: var(--black-3, #1d2122);
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  transform: translateY(-50%);
+  transition: opacity 250ms linear;
+
+  &-icon {
+    transform: rotate(180deg);
+  }
+
+  @media screen and (max-width: 992px) {
+    left: 30px;
+  }
+}
+
+.plugin-next {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  right: 65px;
+  background: var(--black-3, #1d2122);
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: opacity 250ms linear;
+
+  @media screen and (max-width: 992px) {
+    right: 30px;
   }
 }

@@ -1,8 +1,8 @@
 import React from "react";
 
-const We = () => {
+const We = ({ style = {} }) => {
   return (
-    <section className="we">
+    <section className="we" style={style}>
       <div className="container">
         <div className="we-block">
           <h3 className="we-second second-title">Для кого </h3>

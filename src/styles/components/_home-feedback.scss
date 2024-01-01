@@ -1,6 +1,22 @@
 .feedback {
   padding: 120px 0;
 
+  @media screen and (max-width: 1200px) {
+    padding: 100px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 80px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (max-width: 511px) {
+    padding: 60px 0;
+  }
+
   &-second {
     text-align: center;
     margin-bottom: 24px;
@@ -25,6 +41,24 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    @media screen and (max-width: 1200px) {
+      &:nth-child(4) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 511px) {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
 
     &-head {
       display: flex;

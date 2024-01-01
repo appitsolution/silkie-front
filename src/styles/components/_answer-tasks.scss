@@ -1,0 +1,30 @@
+.tasks {
+  padding: 120px 0;
+  background: var(--black-3, #1d2122);
+
+  &-title {
+    color: #fff;
+    margin-bottom: 32px;
+  }
+
+  &-description {
+    color: #fff;
+    margin-bottom: 50px;
+  }
+
+  &-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  &-item {
+    width: calc((100% - 120px) / 4);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &-description {
+      color: #fff;
+    }
+  }
+}

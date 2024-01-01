@@ -1,0 +1,81 @@
+.prices {
+  background-image: url("../../images/prices/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+
+  &-block {
+    display: flex;
+    gap: 40px;
+  }
+  &-second {
+    margin-bottom: 24px;
+  }
+
+  &-title {
+    margin-bottom: 32px;
+  }
+
+  &-head {
+    width: 50%;
+  }
+
+  &-variants {
+    width: 50%;
+
+    &-list {
+      display: flex;
+      gap: 40px;
+    }
+
+    &-item {
+      border: 1px solid var(--gray-1, #f7f7f9);
+      background: var(--white-1, #fff);
+      box-shadow: 0px 4px 25px 0px rgba(29, 33, 34, 0.17);
+      padding: 24px 16px 40px 16px;
+
+      &-price {
+        text-align: right;
+        margin-bottom: 16px;
+      }
+
+      &-title {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 32px;
+      }
+
+      &-plus {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 36px;
+
+        &-item {
+          color: var(--black-3, #1d2122);
+          font-family: "Open Sans";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 28.8px; /* 180% */
+
+          &-icon {
+            margin-right: 8px;
+          }
+        }
+      }
+
+      &-button {
+        padding: 12px 43px;
+        color: var(--white-1, #fff);
+        font-size: 12px;
+
+        &-block {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
