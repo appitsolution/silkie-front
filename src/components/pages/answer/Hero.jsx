@@ -23,6 +23,11 @@ const AnswerHero = () => {
                 For Adobe Photoshop
               </h1>
 
+              <img
+                className="answer-hero-content-image-img-mobile"
+                src={content}
+              />
+
               <p className="answer-hero-content-info-description description">
                 Це просте, інтуїтивне та потужне розширення розроблене для того,
                 щоб допомогти дизайнерам керувати перебігом впровадження
@@ -34,9 +39,11 @@ const AnswerHero = () => {
                 станьте частиною нашої спільноти.
               </p>
 
-              <button className="answer-hero-content-info-button first-button">
-                Зареєструватись
-              </button>
+              <div className="answer-hero-content-info-button-block">
+                <button className="answer-hero-content-info-button first-button">
+                  Зареєструватись
+                </button>
+              </div>
             </div>
             <div className="answer-hero-content-image">
               <img className="answer-hero-content-image-img" src={content} />

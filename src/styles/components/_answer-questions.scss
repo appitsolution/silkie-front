@@ -1,6 +1,22 @@
 .questions {
   padding-bottom: 120px;
 
+  @media screen and (max-width: 1200px) {
+    padding-bottom: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (max-width: 511px) {
+    padding-bottom: 60px;
+  }
+
   &-title {
     margin-bottom: 50px;
   }
@@ -12,13 +28,13 @@
 
   &-head {
     width: 50%;
-
     &-list {
       display: flex;
       flex-direction: column;
     }
 
     &-item {
+      position: relative;
       &-button {
         width: 100%;
         padding: 16px 0;
@@ -42,9 +58,14 @@
   }
 
   &-body {
-    width: 50%;
+    // width: 50%;
 
     &-text {
+      position: absolute;
+      top: 0;
+      left: calc(100% + 76px);
+      width: calc(100% - 76px);
+
       color: var(--black-3, #1d2122);
       font-family: Open Sans;
       font-size: 16px;

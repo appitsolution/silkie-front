@@ -7,6 +7,10 @@
   padding: 38px 16px 0 140px;
   background: var(--gray-1, #f7f7f9);
 
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
   &-search {
     display: flex;
     align-items: center;

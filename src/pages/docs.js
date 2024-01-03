@@ -23,7 +23,7 @@ const Docs = () => {
             transform: "translateX(-50%)",
           }}
         >
-          <Header />
+          <Header current="/docs" />
         </div>
         <div className="blog-block">
           <div className="blog-sidebar" style={{ paddingTop: 150 }}>
@@ -317,7 +317,7 @@ const Docs = () => {
           </div>
         </div>
       </section>
-      <Footer />
+      <Footer current="/docs" />
     </>
   );
 };
