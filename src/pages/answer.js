@@ -7,6 +7,7 @@ import Partners from "../components/pages/home/Partners";
 import Prices from "../components/pages/answer/Prices";
 import Feedback from "../components/pages/home/Feedback";
 import Questions from "../components/pages/answer/Questions";
+import Lodva from "../components/pages/answer/Lodva";
 
 const Answer = () => {
   return (
@@ -14,6 +15,7 @@ const Answer = () => {
       <AnswerHero />
       <Tasks />
       <We style={{ paddingBottom: "120px" }} />
+      <Lodva />
       <Partners />
       <Prices />
       <Feedback />
