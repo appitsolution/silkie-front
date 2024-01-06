@@ -8,7 +8,7 @@ const AnswerHero = () => {
   return (
     <section className="answer-hero">
       <div className="answer-hero-block">
-        <div className="container">
+        <div className="container-header">
           <Header current="/answer" />
         </div>
         <img className="answer-hero-background1" src={background1} />

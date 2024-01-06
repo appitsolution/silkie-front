@@ -4,7 +4,7 @@ import Header from "../../Header";
 const NewsHero = () => {
   return (
     <section className="news-hero">
-      <div className="container">
+      <div className="container-header">
         <Header current="/news" />
       </div>
       <div className="news-hero-content">

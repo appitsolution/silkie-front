@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 const Permission = () => {
   return (
     <>
-      <div className="container" style={{ paddingTop: 12 }}>
+      <div className="container-header" style={{ paddingTop: 12 }}>
         <Header current="/permission" />
       </div>
       <section className="privacy">

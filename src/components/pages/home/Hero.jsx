@@ -5,7 +5,7 @@ import hero from "../../../images/home-hero.jpg";
 const HomeHero = () => {
   return (
     <section className="home-hero">
-      <div className="container">
+      <div className="container-header">
         <div className="home-hero-block">
           <Header />
 
