@@ -1,14 +1,14 @@
 .questions {
-  padding-bottom: 120px;
+  padding-bottom: 180px;
 
   @media screen and (max-width: 1200px) {
-    padding-bottom: 100px;
+    padding-bottom: 180px;
     padding-left: 15px;
     padding-right: 15px;
   }
 
   @media screen and (max-width: 768px) {
-    padding-bottom: 80px;
+    padding-bottom: 180px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -28,13 +28,22 @@
 
   &-head {
     width: 50%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
     &-list {
       display: flex;
       flex-direction: column;
+
+      position: relative;
     }
 
     &-item {
-      position: relative;
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+      }
       &-button {
         width: 100%;
         padding: 16px 0;
@@ -53,18 +62,49 @@
         cursor: pointer;
 
         border-bottom: 1px solid #e4e4e7;
+
+        &-icon {
+          fill: #1d2122;
+          width: 24px;
+          height: 24px;
+        }
+
+        &.active + .questions-body-text {
+          opacity: 1;
+          pointer-events: all;
+          user-select: all;
+
+          @media screen and (max-width: 768px) {
+            display: block;
+          }
+        }
+        &.active &-icon {
+          fill: #ffaa17;
+        }
       }
     }
   }
 
   &-body {
-    // width: 50%;
-
     &-text {
+      opacity: 0;
+      pointer-events: none;
+      user-select: none;
+
       position: absolute;
-      top: 0;
+      top: 50%;
       left: calc(100% + 76px);
       width: calc(100% - 76px);
+      transform: translateY(-50%);
+
+      @media screen and (max-width: 768px) {
+        transform: translateY(0);
+        left: unset;
+        top: unset;
+        position: static;
+        opacity: 1;
+        display: none;
+      }
 
       color: var(--black-3, #1d2122);
       font-family: Open Sans;

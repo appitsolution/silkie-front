@@ -1,7 +1,19 @@
-import React from "react";
-import arrow from "../../../images/arrow-right.svg";
+import React, { useRef } from "react";
+import arrow from "../../../images/sprite-arrow-right.svg";
 
 const Questions = () => {
+  const questionEl = useRef(null);
+
+  const openQuestion = ({ target }) => {
+    if (target.classList.contains("active")) {
+      target.classList.remove("active");
+    } else {
+      questionEl.current.childNodes.forEach((item) => {
+        item.firstChild.classList.remove("active");
+      });
+      target.classList.add("active");
+    }
+  };
   return (
     <section className="questions">
       <div className="container">
@@ -10,14 +22,16 @@ const Questions = () => {
         </h2>
         <div className="questions-block">
           <div className="questions-head">
-            <ul className="questions-head-list">
+            <ul className="questions-head-list" ref={questionEl}>
               <li className="questions-head-item">
-                <button className="questions-head-item-button">
+                <button
+                  className="questions-head-item-button"
+                  onClick={openQuestion}
+                >
                   01. Смачне пряженя без жодної насильницької оруди ?
-                  <img
-                    className="questions-head-item-button-icon"
-                    src={arrow}
-                  />
+                  <svg className="questions-head-item-button-icon">
+                    <use href={`${arrow}#arrow-right`}></use>
+                  </svg>
                 </button>
                 <p className="questions-body-text">
                   Надавайте перевагу важлівішим справам, доки застосунок
@@ -33,50 +47,120 @@ const Questions = () => {
                 </p>
               </li>
               <li className="questions-head-item">
-                <button className="questions-head-item-button">
+                <button
+                  className="questions-head-item-button"
+                  onClick={openQuestion}
+                >
                   02. Смачне пряженя без жодної насильницької оруди ?
-                  <img
-                    className="questions-head-item-button-icon"
-                    src={arrow}
-                  />
+                  <svg className="questions-head-item-button-icon">
+                    <use href={`${arrow}#arrow-right`}></use>
+                  </svg>
                 </button>
+                <p className="questions-body-text">
+                  Надавайте перевагу важлівішим справам, доки застосунок
+                  продовжує виконувати свій труд навіть у тловому ладі. Завдяки
+                  чувно зрозумілій оболонці, опанувати застосунк дуже легко -
+                  незалежно від вашого рівня володіння Adobe Photoshop.
+                  <br />
+                  <br />
+                  Надавайте перевагу важлівішим справам, доки застосунок
+                  продовжує виконувати свій труд навіть у тловому ладі. Завдяки
+                  чувно зрозумілій оболонці, опанувати застосунк дуже легко -
+                  незалежно від вашого рівня володіння Adobe Photoshop.
+                </p>
               </li>
               <li className="questions-head-item">
-                <button className="questions-head-item-button">
+                <button
+                  className="questions-head-item-button"
+                  onClick={openQuestion}
+                >
                   03. Смачне пряженя без жодної насильницької оруди над курками,
                   розігрійте сковорідку?
-                  <img
-                    className="questions-head-item-button-icon"
-                    src={arrow}
-                  />
+                  <svg className="questions-head-item-button-icon">
+                    <use href={`${arrow}#arrow-right`}></use>
+                  </svg>
                 </button>
+                <p className="questions-body-text">
+                  Надавайте перевагу важлівішим справам, доки застосунок
+                  продовжує виконувати свій труд навіть у тловому ладі. Завдяки
+                  чувно зрозумілій оболонці, опанувати застосунк дуже легко -
+                  незалежно від вашого рівня володіння Adobe Photoshop.
+                  <br />
+                  <br />
+                  Надавайте перевагу важлівішим справам, доки застосунок
+                  продовжує виконувати свій труд навіть у тловому ладі. Завдяки
+                  чувно зрозумілій оболонці, опанувати застосунк дуже легко -
+                  незалежно від вашого рівня володіння Adobe Photoshop.
+                </p>
               </li>
               <li className="questions-head-item">
-                <button className="questions-head-item-button">
+                <button
+                  className="questions-head-item-button"
+                  onClick={openQuestion}
+                >
                   04. Смачне пряженя без жодної насильницької оруди ?
-                  <img
-                    className="questions-head-item-button-icon"
-                    src={arrow}
-                  />
+                  <svg className="questions-head-item-button-icon">
+                    <use href={`${arrow}#arrow-right`}></use>
+                  </svg>
                 </button>
+                <p className="questions-body-text">
+                  Надавайте перевагу важлівішим справам, доки застосунок
+                  продовжує виконувати свій труд навіть у тловому ладі. Завдяки
+                  чувно зрозумілій оболонці, опанувати застосунк дуже легко -
+                  незалежно від вашого рівня володіння Adobe Photoshop.
+                  <br />
+                  <br />
+                  Надавайте перевагу важлівішим справам, доки застосунок
+                  продовжує виконувати свій труд навіть у тловому ладі. Завдяки
+                  чувно зрозумілій оболонці, опанувати застосунк дуже легко -
+                  незалежно від вашого рівня володіння Adobe Photoshop.
+                </p>
               </li>
               <li className="questions-head-item">
-                <button className="questions-head-item-button">
+                <button
+                  className="questions-head-item-button"
+                  onClick={openQuestion}
+                >
                   05. Смачне пряженя без жодної насильницької оруди ?
-                  <img
-                    className="questions-head-item-button-icon"
-                    src={arrow}
-                  />
+                  <svg className="questions-head-item-button-icon">
+                    <use href={`${arrow}#arrow-right`}></use>
+                  </svg>
                 </button>
+                <p className="questions-body-text">
+                  Надавайте перевагу важлівішим справам, доки застосунок
+                  продовжує виконувати свій труд навіть у тловому ладі. Завдяки
+                  чувно зрозумілій оболонці, опанувати застосунк дуже легко -
+                  незалежно від вашого рівня володіння Adobe Photoshop.
+                  <br />
+                  <br />
+                  Надавайте перевагу важлівішим справам, доки застосунок
+                  продовжує виконувати свій труд навіть у тловому ладі. Завдяки
+                  чувно зрозумілій оболонці, опанувати застосунк дуже легко -
+                  незалежно від вашого рівня володіння Adobe Photoshop.
+                </p>
               </li>
               <li className="questions-head-item">
-                <button className="questions-head-item-button">
+                <button
+                  className="questions-head-item-button"
+                  onClick={openQuestion}
+                >
                   06. Смачне пряженя без жодної насильницької оруди ?
-                  <img
-                    className="questions-head-item-button-icon"
-                    src={arrow}
-                  />
+                  <svg className="questions-head-item-button-icon">
+                    <use href={`${arrow}#arrow-right`}></use>
+                  </svg>
                 </button>
+                <p className="questions-body-text">
+                  Надавайте перевагу важлівішим справам, доки застосунок
+                  продовжує виконувати свій труд навіть у тловому ладі. Завдяки
+                  чувно зрозумілій оболонці, опанувати застосунк дуже легко -
+                  незалежно від вашого рівня володіння Adobe Photoshop.
+                  <br />
+                  <br />
+                  Надавайте перевагу важлівішим справам, доки застосунок
+                  продовжує виконувати свій труд навіть у тловому ладі. Завдяки
+                  чувно зрозумілій оболонці, опанувати застосунк дуже легко -
+                  незалежно від вашого рівня володіння Adobe Photoshop.
+                </p>
               </li>
             </ul>
           </div>
